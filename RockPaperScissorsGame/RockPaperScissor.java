@@ -45,7 +45,6 @@ public class RockPaperScissor {
                         System.out.println(player1+" Wins!!!!!!!!!");
                 }
 
-                default -> System.out.println("Enter valid Input...... [-_-]");
             }
 
 
