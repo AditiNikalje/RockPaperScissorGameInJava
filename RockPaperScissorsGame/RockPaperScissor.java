@@ -13,11 +13,6 @@ public class RockPaperScissor {
         String player2 = sc.nextLine();
         System.out.println("Let's start the game.....\n\n");
 
-//        System.out.println("Player 1 enter your choice : Rock, Paper, Scissor.");
-//        String player1Input = sc.nextLine();
-//        System.out.println("Player 2 enter your choice : Rock, Paper, Scissor.");
-//        String player2Input = sc.nextLine();
-
         System.out.println("Player 1 enter your choice : 1 - Rock, 2 - Paper, 3 - Scissor.");
         int player1Input = sc.nextInt();
         System.out.println("Player 2 enter your choice : 1 - Rock, 2 - Paper, 3 - Scissor.");
