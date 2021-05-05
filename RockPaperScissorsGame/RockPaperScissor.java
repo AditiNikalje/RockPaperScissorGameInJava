@@ -1,21 +1,22 @@
 package RockPaperScissorsGame;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class RockPaperScissor {
 
-    final static int ROCK = 1, SCISSOR = 3, PAPER = 2;
+    final static int ROCK = 0, SCISSOR = 2, PAPER = 1;
     public static void main(String[] args){
-        System.out.println("This game is for 2 Players...... \n\n Please enter Player 1 name");
+        System.out.println("This game is for 2 Players...... \n\n Player 1 is System \n\n");
         Scanner sc = new Scanner(System.in);
-        String player1 = sc.nextLine();
+        String player1 = "System";
         System.out.println("Please enter Player 2 name");
         String player2 = sc.nextLine();
         System.out.println("Let's start the game.....\n\n");
-
-        System.out.println("Player 1 enter your choice : 1 - Rock, 2 - Paper, 3 - Scissor.");
-        int player1Input = sc.nextInt();
-        System.out.println("Player 2 enter your choice : 1 - Rock, 2 - Paper, 3 - Scissor.");
+        
+        Random rr = new Random();
+        int player1Input = rr.nextInt(2);
+        System.out.println("Player 2 enter your choice : 0 - Rock, 1 - Paper, 2 - Scissor.");
         int player2Input = sc.nextInt();
 
         if (player1Input == player2Input){
@@ -45,6 +46,7 @@ public class RockPaperScissor {
                         System.out.println(player1+" Wins!!!!!!!!!");
                 }
 
+                default -> System.out.println("Enter valid Input...... [-_-]");
             }
 
 
